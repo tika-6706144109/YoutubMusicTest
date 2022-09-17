@@ -1,0 +1,150 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-09-17T16:31:43.153Z",
+        "line": 5,
+        "name": "Add to playlist music from search bar",
+        "description": "",
+        "id": "add-to-playlist-music;add-to-playlist-music-from-search-bar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17097348000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on the open url page",
+            "match": {
+              "location": "steps.AddPlaylistStep.userOpenYoutubeMusic()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3111721000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click search bar",
+            "match": {
+              "location": "steps.AddPlaylistStep.userClickSearchbar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2045373000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user input the keyword and click enter",
+            "match": {
+              "location": "steps.AddPlaylistStep.userInputKeyword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1350479000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the app will show the result",
+            "match": {
+              "location": "steps.AddPlaylistStep.userShowResult()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2561644000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user will click the result",
+            "match": {
+              "location": "steps.AddPlaylistStep.userClickResult()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11257260000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the app will play the music",
+            "match": {
+              "location": "steps.AddPlaylistStep.userPlayMusic()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html[1]/body[1]/ytmusic-app[1]/ytmusic-app-layout[1]/ytmusic-player-page[1]/div[1]/div[1]/ytmusic-player[1]/div[2]/div[1]/div[1]/div[13]/div[1]/div[3]/div[1]/div[2]/span[1]/button[1]\"}\n  (Session info: chrome\u003d105.0.5195.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.1.1\u0027, revision: \u0027e8fcc2cecf\u0027\nSystem info: host: \u0027Visions-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:8b9:5d13:c366:3d8f%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002712.6\u0027, java.version: \u002711.0.15\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a06e3e1b121bb8800fe6487533f134bb, findElement {using\u003dxpath, value\u003d/html[1]/body[1]/ytmusic-app[1]/ytmusic-app-layout[1]/ytmusic-player-page[1]/div[1]/div[1]/ytmusic-player[1]/div[2]/div[1]/div[1]/div[13]/div[1]/div[3]/div[1]/div[2]/span[1]/button[1]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/fc/l2xghrd10yx...}, goog:chromeOptions: {debuggerAddress: localhost:61436}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61436/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a06e3e1b121bb8800fe6487533f134bb\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)\n\tat base.PageObject.find(PageObject.java:28)\n\tat base.PageObject.isDisplayed(PageObject.java:45)\n\tat pages.AddPlaylist.clickThreeDots(AddPlaylist.java:43)\n\tat steps.AddPlaylistStep.userClickThreeDots(AddPlaylistStep.java:50)\n\tat ✽.user will click three dots in player(file:///Users/visionplus/Documents/Efishery/YoutubeMusic/src/test/resources/features/AddPlaylist.feature:12)\n",
+              "duration": 511625000,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "user will click three dots in player",
+            "match": {
+              "location": "steps.AddPlaylistStep.userClickThreeDots()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3063000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user will click add to playlist",
+            "match": {
+              "location": "steps.AddPlaylistStep.userClickAddPlaylist()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3114000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user will click the playlist and added to playlist",
+            "match": {
+              "location": "steps.AddPlaylistStep.userClickPlaylist()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PlaylistFeature"
+          },
+          {
+            "name": "@AddPlaylist"
+          }
+        ]
+      }
+    ],
+    "name": "Add to playlist music",
+    "description": "",
+    "id": "add-to-playlist-music",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddPlaylist.feature",
+    "tags": [
+      {
+        "name": "@PlaylistFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id "com.github.spacialcircumstances.gradle-cucumber-reporting" version "0.1.21"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation group: 'org.junit.vintage', name: 'junit-vintage-engine', version: '5.8.1'
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.0.3'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '3.141.0'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.1.1'
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '6.10.4'
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '6.10.4'
+}
+
+cucumberReports {
+    runWithJenkins = true
+    outputDir = file("$projectDir/build/generated-reports")
+    buildId = System.getenv('BUILD_NUMBER').toString()
+    reports = files("$projectDir/build/cucumber.json")
+}
+
+
+test {
+    useJUnitPlatform()
+    testLogging.showStandardStreams = true
+}
